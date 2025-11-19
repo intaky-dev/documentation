@@ -125,7 +125,7 @@ Sistema profesional de entrega de vehículos con testing exhaustivo:
 
 **Stack:** Python, Odoo 14+, Flask, JavaScript, PostgreSQL
 
-[📄 Ver documentación completa](modulo_lubricar.md) | [🧪 Ver tests](modulo_lubricar_tests/)
+[📄 Ver documentación completa](modulo_lubricar.md) | [🧪 Ver tests en GitHub](https://github.com/intaky-dev/modulo_lubricar/tree/master/tests)
 
 ## 📖 Categorización por Tecnología
 
