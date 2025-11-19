@@ -22,6 +22,7 @@ Este directorio contiene la documentación completa de todos los repositorios de
 |-------------|------------|-------------|-----|
 | **modulo_rg5329** | Python, Odoo | Percepción IVA AFIP RG 5329/2023 - Módulo completo con automatización | [📄 Ver](modulo_rg5329.md) |
 | **modulo_nakel** | Python, Odoo | Precio Anterior - Histórico de precios de proveedores | [📄 Ver](modulo_nakel.md) |
+| **modulo_lubricar** | Python, Odoo | Sistema de Entrega de Vehículos - Checklist completo para flota | [📄 Ver](modulo_lubricar.md) ⭐ |
 | **module_template** | Python, Odoo | Template completo para desarrollo de módulos Odoo | [📄 Ver](module_template.md) |
 | **custom_pos_translations** | Python, Odoo | Traducciones personalizadas para POS (español argentino) | [📄 Ver](custom_pos_translations.md) |
 | **db-clean-python** | Python, Odoo | Wizard para limpieza de datos de testing/desarrollo | [📄 Ver](db-clean-python.md) |
@@ -52,13 +53,14 @@ Este directorio contiene la documentación completa de todos los repositorios de
 
 ## 📊 Estadísticas
 
-- **Total de repositorios**: 22
-- **Documentados en detalle**: ✅ **15** (100% de repos propios)
+- **Total de repositorios**: 23
+- **Documentados en detalle**: ✅ **16** (100% de repos propios)
   - Infraestructura: 7
-  - Python/Odoo: 6
+  - Python/Odoo: 7 ⭐ (incluye modulo_lubricar con suite completa de tests)
   - Utilidades: 2
 - **Forks**: 6 (sin documentar - repos upstream)
 - **Cobertura**: 100% de repositorios propios documentados
+- **Tests creados**: 48 tests (modulo_lubricar: 20 unitarias + 15 integración + 13 E2E/HTTP)
 
 ## 🏆 Repositorios Destacados
 
@@ -106,6 +108,24 @@ Instalación automatizada de K3s con aplicaciones pre-configuradas:
 **Stack:** Terraform, K3s, Helm, Jenkins, Makefile
 
 [📄 Ver documentación completa](k8s.md)
+
+### 4. ⭐ modulo_lubricar
+**Módulo Odoo con suite completa de tests**
+
+Sistema profesional de entrega de vehículos con testing exhaustivo:
+- 180 líneas de modelo principal
+- Checklist de 38 campos de inspección
+- Formulario web público
+- 48 tests automatizados (cobertura 90%+)
+  - 20 pruebas unitarias
+  - 15 pruebas de integración
+  - 13 pruebas E2E/HTTP
+- Documentación completa de 500+ líneas
+- APIs REST para conductores y vehículos
+
+**Stack:** Python, Odoo 14+, Flask, JavaScript, PostgreSQL
+
+[📄 Ver documentación completa](modulo_lubricar.md) | [🧪 Ver tests](modulo_lubricar_tests/)
 
 ## 📖 Categorización por Tecnología
 
@@ -213,8 +233,9 @@ Consultar el archivo LICENSE en cada repositorio para detalles específicos.
 Esta documentación fue generada el **2025-11-19** y está **100% completa**.
 
 **Totales:**
-- 15 repositorios propios documentados en detalle
-- ~6,000+ líneas de documentación
+- 16 repositorios propios documentados en detalle
+- ~7,000+ líneas de documentación
+- 48 tests automatizados (modulo_lubricar)
 - Cobertura del 100%
 
 Para actualizar:
