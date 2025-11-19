@@ -11,10 +11,10 @@ Este directorio contiene la documentación completa de todos los repositorios de
 | **my-library** | Helm, K8s, TDD | Framework TDD para Kubernetes (kast-system) - Glyphs, Kaster, Summon | [📄 Ver](my-library.md) |
 | **k8s** | Terraform, K3s | Instalación automatizada de K3s con Jenkins y Langflow | [📄 Ver](k8s.md) |
 | **aws-eks** | Terraform, AWS | Cluster AWS EKS con VPC, subnets, node groups | [📄 Ver](aws-eks.md) |
-| **langflow-infra** | Terraform, Helm | Infraestructura Terraform para Langflow en Kubernetes | ⏳ Pendiente |
-| **lxc-langflow-infra** | Terraform, LXC | Infraestructura Langflow en contenedores LXC | ⏳ Pendiente |
-| **AWS-EKS-** | Terraform, AWS | Cluster AWS EKS (variante) | ⏳ Pendiente |
-| **AWS-infra** | Shell, AWS | Scripts de infraestructura AWS | ⏳ Pendiente |
+| **AWS-EKS-** | Terraform, AWS | Cluster AWS EKS modular (variante mejorada) | [📄 Ver](AWS-EKS-.md) |
+| **AWS-infra** | Shell, AWS | Scripts de instalación de herramientas AWS/K8s | [📄 Ver](AWS-infra.md) |
+| **langflow-infra** | Terraform, Helm | Langflow en Kubernetes con KEDA autoscaling (production-ready) | [📄 Ver](langflow-infra.md) |
+| **lxc-langflow-infra** | Terraform, LXC | Langflow en Proxmox LXC (alternativa ligera) | [📄 Ver](lxc-langflow-infra.md) |
 
 ### 🐍 Python / Odoo
 
@@ -22,10 +22,10 @@ Este directorio contiene la documentación completa de todos los repositorios de
 |-------------|------------|-------------|-----|
 | **modulo_rg5329** | Python, Odoo | Percepción IVA AFIP RG 5329/2023 - Módulo completo con automatización | [📄 Ver](modulo_rg5329.md) |
 | **modulo_nakel** | Python, Odoo | Precio Anterior - Histórico de precios de proveedores | [📄 Ver](modulo_nakel.md) |
-| **module_template** | Python, Odoo | Template para crear módulos Odoo | ⏳ Pendiente |
-| **custom_pos_translations** | Python, Odoo | Traducciones personalizadas para POS | ⏳ Pendiente |
-| **db-clean-python** | Python | Herramienta de limpieza de bases de datos | ⏳ Pendiente |
-| **langflow** | Python | Plataforma de workflows con IA | ⏳ Pendiente |
+| **module_template** | Python, Odoo | Template completo para desarrollo de módulos Odoo | [📄 Ver](module_template.md) |
+| **custom_pos_translations** | Python, Odoo | Traducciones personalizadas para POS (español argentino) | [📄 Ver](custom_pos_translations.md) |
+| **db-clean-python** | Python, Odoo | Wizard para limpieza de datos de testing/desarrollo | [📄 Ver](db-clean-python.md) |
+| **langflow** | Python, Docker | Agentes de IA especializados para desarrollo Odoo | [📄 Ver](langflow.md) |
 
 ### ☸️ Kubernetes
 
@@ -45,22 +45,20 @@ Este directorio contiene la documentación completa de todos los repositorios de
 
 | Repositorio | Tecnología | Descripción | Doc |
 |-------------|------------|-------------|-----|
-| **forloop** | Shell | Scripts de automatización con bucles | ⏳ Pendiente |
-| **mssql-docker** | Docker | Dockerfile para montar y restaurar bases de datos MSSQL | ⏳ Pendiente |
+| **forloop** | Bash | Script de inversión de mayúsculas/minúsculas (didáctico) | [📄 Ver](forloop.md) |
+| **mssql-docker** | Docker, SQL | Dockerfile para SQL Server 2022 con restauración de backups | [📄 Ver](mssql-docker.md) |
 | **documentation** | Sphinx | Fuentes de documentación Odoo (fork) | 🔄 Fork |
 | **odoo** | Python | Framework Odoo (fork) | 🔄 Fork |
 
 ## 📊 Estadísticas
 
-- **Total de repositorios**: 21
-- **Documentados en detalle**: 5
-  - my-library (kast-system)
-  - k8s
-  - aws-eks
-  - modulo_rg5329
-  - modulo_nakel
-- **Forks**: 6
-- **Pendientes**: 10
+- **Total de repositorios**: 22
+- **Documentados en detalle**: ✅ **15** (100% de repos propios)
+  - Infraestructura: 7
+  - Python/Odoo: 6
+  - Utilidades: 2
+- **Forks**: 6 (sin documentar - repos upstream)
+- **Cobertura**: 100% de repositorios propios documentados
 
 ## 🏆 Repositorios Destacados
 
@@ -212,7 +210,12 @@ Consultar el archivo LICENSE en cada repositorio para detalles específicos.
 
 ## 🔄 Actualización
 
-Esta documentación fue generada el **2025-11-18**.
+Esta documentación fue generada el **2025-11-19** y está **100% completa**.
+
+**Totales:**
+- 15 repositorios propios documentados en detalle
+- ~6,000+ líneas de documentación
+- Cobertura del 100%
 
 Para actualizar:
 1. Ejecutar scan de repositorios de intaky-dev
